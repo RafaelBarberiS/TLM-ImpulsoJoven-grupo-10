@@ -1,110 +1,147 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Impulso Joven - Inicio</title>
-    </head>
-    <body>
-        <header>
-            <section id="presentacion">
-                <h1>Impulso Joven</h1>
-                <img
-                 src="./img/logoImpulsoJoven.png"
-                 alt="Logo de la ONG impulso Joven"
-                 width="150">
-                <p>
-                    Impulso Joven es una organización sin fines de lucro
-                    dedicada a brindar oportunidades educativas y laborales a 
-                    jóvenes en situación de vulnerabilidad.
-                </p> 
-            </section>
-            <nav>
-          <ul>
-           <li><a href="index.html">Inicio</a></li>
-           <li><a href="nosotros.html">Nosotros</a></li>
-           <li><a href="programas.html">Programas</a></li>
-           <li><a href="contacto.html">Contacto</a></li>
-          </ul>
-        </nav>
-        </header>
-        <main>
-            <section>
-                <h2 id="historia">Nuestra Historia</h2>
-                <p class="parrafos">María Gómez y Juan Perez, ambos criados en instituciones de menores, sintieron
-                    en carne propia lo que es la desigualdad de oportunidades.</p>
-                <p class="parrafos">En 2019 surge en ellos la idea
-                     que llevarían a la práctica un año después.</p>
-                <p class="parrafos">Así, en el año <strong>2020</strong> nació <strong>Impulso Joven</strong>, una ONG creada
-                    con el objetivo de reducir la desigualdad de oportunidades en jóvenes.</p>
-            </section>
-            <section>        
-                <h2 id="nuestros_valores">Valores:</h2>
-                <ul>
-                    <li class="valores">Inclusión</li>
-                    <li class="valores">Educación accesible</li>
-                    <li class="valores">Compromiso social</li>
-                    <li class="valores">Transparencia</li>
-                    <li class="valores">Trabajo en equipo</li>
-                </ul>
-            </section>
-            <section>    
-                <h2 id="nuestro_equipo">Equipo:</h2>
-                <ul>
-                    <li class="equipo"><strong>Juan Pérez</strong>-Director Ejecutivo</li>
-                    <li class="equipo"><strong>María Gómez</strong>-Coordinadora de Programas</li>
-                    <li class="equipo"><strong>Lucas Fernández</strong>-Comunicación</li>
-                    <li class="equipo"><strong>Ana López</strong>-Voluntariado</li>
-                </ul>
-            </section>
-            <br>
-            <aside>
-                <h2>Datos de la ONG</h2>
-                <dl>
-                    <dt>Año de fundación</dt>
-                    <dd><b>2020</b></dd>
-                    <dt>Ubicación</dt>
-                    <dd>Buenos Aires, Argentina</dd>
-                    <dt>Tipo de Organización</dt>
-                    <dd>ONG sin fines de lucro</dd>
-                    <dt>Ámbito</dt>
-                    <dd>Educación y empleo juvenil</dd>
-                </dl>
-            </aside>
-            <form action="/enviar" method="post" >
-                <h3>Si te interesa ser parte de nuestro voluntariado, envíanos tus datos y nos contactaremos para programar una entrevista</h3>
-                <br>
-                <label for="nombre">Nombre completo</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Ej: Ana Díaz" required>
-                <br><br>
-                <label for="email">Email</label>
-                <input id="email" type="email" name="email" placeholder="Ej:tucuenta@correo.com" required>
-                <br><br>
-                <label for="estudios">Nivel de estudios</label>
-                <select id="estudios" name="estudios" required>
-                    <option value="">Seleccione</option>
-                    <option value="sc">Secundario completo</option>
-                    <option value="ui">Universitario incompleto</option>
-                    <option value="uc">Universitario completo</option>
-                </select>
-                <br><br>    
-                <label for="disponibilidad">Disponibilidad</label>
-                <select id="disponibilidad" name="disponibilidad">
-                    <option value="m">Mañana</option>
-                    <option value="t">Tarde</option>
-                    <option value="n">Noche</option>
-                </select>
-                <br><br>
-                <label for="mensaje">Contanos sobre vos</label>
-                <br>
-                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Ej: contanos por qué te interesa ser voluntario y que tenés para ofrecer"></textarea>
-                <br><br>
-                <button type="submit">Envíar</button>
-            </form>   
-        </main>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Impulso Joven - Inicio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/estilos.css" />
+  </head>
+  <body>
+    <header>
+      <section id="presentacion">
+        <h1>Impulso Joven</h1>
+        <img
+          src="./img/logoImpulsoJoven.png"
+          alt="Logo de la ONG impulso Joven"
+          width="150"
+        />
+        <p>
+          Impulso Joven es una organización sin fines de lucro dedicada a
+          brindar oportunidades educativas y laborales a jóvenes en situación de
+          vulnerabilidad.
+        </p>
+      </section>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="programas.html">Programas</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2 id="historia">Nuestra Historia</h2>
+        <p class="parrafos">
+          María Gómez y Juan Perez, ambos criados en instituciones de menores,
+          sintieron en carne propia lo que es la desigualdad de oportunidades.
+        </p>
+        <p class="parrafos">
+          En 2019 surge en ellos la idea que llevarían a la práctica un año
+          después.
+        </p>
+        <p class="parrafos">
+          Así, en el año <strong>2020</strong> nació
+          <strong>Impulso Joven</strong>, una ONG creada con el objetivo de
+          reducir la desigualdad de oportunidades en jóvenes.
+        </p>
+      </section>
+      <section>
+        <h2 id="nuestros_valores">Valores:</h2>
+        <ul>
+          <li class="valores">Inclusión</li>
+          <li class="valores">Educación accesible</li>
+          <li class="valores">Compromiso social</li>
+          <li class="valores">Transparencia</li>
+          <li class="valores">Trabajo en equipo</li>
+        </ul>
+      </section>
+      <section>
+        <h2 id="nuestro_equipo">Equipo:</h2>
+        <ul>
+          <li class="equipo"><strong>Juan Pérez</strong>-Director Ejecutivo</li>
+          <li class="equipo">
+            <strong>María Gómez</strong>-Coordinadora de Programas
+          </li>
+          <li class="equipo"><strong>Lucas Fernández</strong>-Comunicación</li>
+          <li class="equipo"><strong>Ana López</strong>-Voluntariado</li>
+        </ul>
+      </section>
+      <br />
+      <aside>
+        <h2>Datos de la ONG</h2>
+        <dl>
+          <dt>Año de fundación</dt>
+          <dd><b>2020</b></dd>
+          <dt>Ubicación</dt>
+          <dd>Buenos Aires, Argentina</dd>
+          <dt>Tipo de Organización</dt>
+          <dd>ONG sin fines de lucro</dd>
+          <dt>Ámbito</dt>
+          <dd>Educación y empleo juvenil</dd>
+        </dl>
+      </aside>
+      <form action="/enviar" method="post">
+        <h3>
+          Si te interesa ser parte de nuestro voluntariado, envíanos tus datos y
+          nos contactaremos para programar una entrevista
+        </h3>
+        <br />
+        <label for="nombre">Nombre completo</label>
+        <input
+          type="text"
+          id="nombre"
+          name="nombre"
+          placeholder="Ej: Ana Díaz"
+          required
+        />
+        <br /><br />
+        <label for="email">Email</label>
+        <input
+          id="email"
+          type="email"
+          name="email"
+          placeholder="Ej:tucuenta@correo.com"
+          required
+        />
+        <br /><br />
+        <label for="estudios">Nivel de estudios</label>
+        <select id="estudios" name="estudios" required>
+          <option value="">Seleccione</option>
+          <option value="sc">Secundario completo</option>
+          <option value="ui">Universitario incompleto</option>
+          <option value="uc">Universitario completo</option>
+        </select>
+        <br /><br />
+        <label for="disponibilidad">Disponibilidad</label>
+        <select id="disponibilidad" name="disponibilidad">
+          <option value="m">Mañana</option>
+          <option value="t">Tarde</option>
+          <option value="n">Noche</option>
+        </select>
+        <br /><br />
+        <label for="mensaje">Contanos sobre vos</label>
+        <br />
+        <textarea
+          id="mensaje"
+          name="mensaje"
+          rows="5"
+          placeholder="Ej: contanos por qué te interesa ser voluntario y que tenés para ofrecer"
+        ></textarea>
+        <br /><br />
+        <button type="submit">Envíar</button>
+      </form>
+    </main>
 
-        <footer>
-          <p>&copy; 2026 Impulso Joven. Todos los derechos reservados.</p>
-        </footer>
-    </body>
+    <footer>
+      <p>&copy; 2026 Impulso Joven. Todos los derechos reservados.</p>
+    </footer>
+  </body>
 </html>

@@ -1,0 +1,78 @@
+/* 🎨 VARIABLES GLOBALES — Rafael  Define la paleta de colores basada en el logo */
+:root {
+  --color-primario: #1e6f9f;
+  --color-secundario: #0b3c5d;
+  --color-terciario: #2faf90;
+  --color-acento: #f59e0b;
+
+  --color-fondo: #f7fafc;
+  --color-blanco: #ffffff;
+  --color-texto: #1a1a1a;
+  --color-gris: #6b7280;
+
+  --fuente-principal:
+    "Bree Serif", serif; /*esta es la fuente general del html de cada pagina*/
+}
+
+/* 🔄 RESET + BOX MODEL — Rafael Evita comportamientos inconsistentes entre navegadores  */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 🔤 ESTILOS GENERALES — Rafael Tipografía base, fondo, legibilidad  */
+body {
+  font-family: var(--fuente-principal);
+  font-size: 1rem;
+  line-height: 1.6;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/*--------------------------------------------------------*/
+/* 🧠 HEADINGS — Integrante 3   Jerarquía visual clara */
+/*--------------------------------------------------------*/
+
+/*--------------------------------------------------------*/
+/* 📌 HEADER — Integrante 2 Contenedor superior del sitio */
+/*--------------------------------------------------------*/
+
+/*--------------------------------------------------------*/
+/* 🧭 NAV — Integrante 2  Menú de navegación */
+/*--------------------------------------------------------*/
+
+/*--------------------------------------------------------*/
+/* 📦 MAIN — Integrante 3 Contenedor principal
+/*--------------------------------------------------------*/
+
+/*--------------------------------------------------------*/
+/* 📝 PÁRRAFOS Y LISTAS — Integrante 3 Espaciado para legibilidad */
+/*--------------------------------------------------------*/
+
+/*--------------------------------------------------------*/
+/* 🖼 IMÁGENES — Integrante 4   Control visual de imágenes */
+/*--------------------------------------------------------*/
+
+/*--------------------------------------------------------*/
+/* 🔗 LINKS GENERALES — Integrante 4 Fuera del nav */
+/*--------------------------------------------------------*/
+
+/*--------------------------------------------------------*/
+/* 📞 FOOTER — Integrante 2  Parte inferior del sitio */
+/*--------------------------------------------------------*/
+
+/*--------------------------------------------------------*/
+/* 📬 ADDRESS — Integrante 4   Información de contacto  */
+/*--------------------------------------------------------*/
+
+/*--------------------------------------------------------*/
+/* 📐 AJUSTES FINALES — Integrante 4 Mejora general del layout */
+/*--------------------------------------------------------*/
+
+/*--------------------------------------------------------*/
+/* 📋 FORMULARIO — Integrante 4  Estilos para el formulario de contacto */
+/*--------------------------------------------------------*/
