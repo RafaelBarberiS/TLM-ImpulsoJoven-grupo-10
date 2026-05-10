@@ -54,25 +54,152 @@ body {
 /*--------------------------------------------------------*/
 
 /*--------------------------------------------------------*/
-/* 🖼 IMÁGENES — Integrante 4   Control visual de imágenes */
-/*--------------------------------------------------------*/
-
-/*--------------------------------------------------------*/
-/* 🔗 LINKS GENERALES — Integrante 4 Fuera del nav */
-/*--------------------------------------------------------*/
-
-/*--------------------------------------------------------*/
 /* 📞 FOOTER — Integrante 2  Parte inferior del sitio */
 /*--------------------------------------------------------*/
 
-/*--------------------------------------------------------*/
-/* 📬 ADDRESS — Integrante 4   Información de contacto  */
-/*--------------------------------------------------------*/
 
 /*--------------------------------------------------------*/
-/* 📐 AJUSTES FINALES — Integrante 4 Mejora general del layout */
+/* 🖼 IMÁGENES —  Marcos - Control visual de imágenes */
 /*--------------------------------------------------------*/
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Figuras */
+figure {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+figure img {
+  display: block;
+  margin: 0 auto;
+}
+
+figcaption {
+  font-size: 0.9rem;
+  color: var(--color-gris);
+}
 
 /*--------------------------------------------------------*/
-/* 📋 FORMULARIO — Integrante 4  Estilos para el formulario de contacto */
+/* 🔗 LINKS GENERALES —  Marcos - Fuera del nav */
 /*--------------------------------------------------------*/
+a {
+  color: var(--color-primario);
+}
+
+a:hover {
+  color: var(--color-acento);
+}
+
+/*--------------------------------------------------------*/
+/* 📬 ADDRESS —  Marcos  - Información de contacto  */
+/*--------------------------------------------------------*/
+address {
+  margin-top: 1rem;
+  font-style: normal;
+}
+
+/*--------------------------------------------------------*/
+/* 📐 AJUSTES FINALES — Marcos  - Mejora general del layout */
+/*--------------------------------------------------------*/
+#mision img {
+  margin: 1rem 0;
+}
+
+#programas ul li {
+  margin-bottom: 1.5rem;
+}
+
+
+/*--------------------------------------------------------*/
+/* 📋 FORMULARIO — Marcos - Estilos para el formulario de contacto */
+/*--------------------------------------------------------*/
+form {
+  background-color: var(--color-blanco);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+form label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+  color: var(--color-secundario);
+}
+
+form input,
+form textarea,
+form select {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid var(--color-gris);
+  border-radius: 4px;
+  font-family: var(--fuente-principal);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: var(--color-texto);
+  background-color: var(--color-fondo);
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+  outline: none;
+  border-color: var(--color-primario);
+  box-shadow: 0 0 0 2px rgba(30, 111, 159, 0.2);
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+form button[type="submit"] {
+  background-color: var(--color-primario);
+  color: var(--color-blanco);
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 4px;
+  font-family: var(--fuente-principal);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+  background-color: var(--color-secundario);
+}
+
+/* ========================================================= */
+/* 🗂 TABLA — Marcos  -  Estilos para tablas del sitio               
+/* ========================================================= */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+}
+
+table th,
+table td {
+  border: 1px solid var(--color-gris);
+  padding: 0.6rem 1rem;
+  text-align: left;
+}
+
+table thead {
+  background-color: var(--color-primario);
+  color: var(--color-blanco);
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #e8f4fb;
+}
+
+table tbody tr:hover {
+  background-color: #d0eaf5;
+}
