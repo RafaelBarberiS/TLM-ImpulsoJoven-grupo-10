@@ -45,35 +45,149 @@
         />
 
         <p>
-          Ante cualquier consulta, no dudes en
-          <a href="#formas-contacto"> contactarnos </a>.
+          Nos encanta estar comunicados con vos, no dudes en
+          <a href="#formas-contacto"> visitarnos </a>, <a href="#suscripcion-noticias">suscribirte a nuestras noticias</a> o <a href="#formulario-contacto">enviarnos tu consulta</a>.
         </p>
       </div>
       <br />
-      <br />
+
+      <section id="formulario-contacto">
+      <h2>Escribinos tu consulta</h2>
+       <form action="#" method="post">
+        <div>
+        <label for="nombre">Nombre y apellido:</label>
+        <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            placeholder="Ingresá tu nombre completo" 
+            required />
+        </div>
+
+        <div>
+        <label for="email">Correo electrónico:</label>
+        <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="ejemplo@mail.com"
+            required />
+        </div>
+
+        <div>
+        <label for="telefono">Teléfono:</label>
+        <input
+            type="tel"
+            id="telefono"
+            name="telefono"
+            placeholder="+54 9 11 1234-5678"  />
+        </div>
+
+        <div>
+        <label for="motivo">Motivo de contacto:</label>
+          <select id="motivo" name="motivo" required>
+            <option value="">Seleccioná una opción</option>
+            <option value="consulta-general">Consulta general</option>
+            <option value="voluntariado">Quiero ser voluntario/a</option>
+            <option value="donaciones">Quiero hacer una donación</option>
+            <option value="programas">Consulta sobre programas</option>
+          </select>
+        </div>
+
+        <div>
+        <label for="mensaje">Mensaje:</label>
+          <textarea
+          id="mensaje"
+          name="mensaje"
+          rows="6"
+          placeholder="Escribí tu consulta"
+          required> 
+          </textarea>
+        </div>
+
+        <br />
+
+    <button type="submit">Enviar consulta</button>
+    <button type="reset">Limpiar formulario</button>
+  </form>
+      </section>
+
+      <section id="suscripcion-noticias">
+        <h2>Suscribite a nuestras noticias</h2>
+        <p> Recibí novedades sobre programas, capacitaciones, campañas y oportunidades
+            para jóvenes.
+        </p>
+
+      <form action="#" method="post">
+        <div>
+        <label for="email-suscripcion">Correo electrónico:</label>
+        <input
+          type="email"
+          id="email-suscripcion"
+          name="email-suscripcion"
+          placeholder="tuemail@mail.com"
+          required/>
+        </div>
+        <br />
+        <div>
+        <label for="frecuencia">¿Con qué frecuencia querés recibir novedades?</label>
+        <select id="frecuencia" name="frecuencia">
+          <option value="semanal">Semanal</option>
+          <option value="mensual">Mensual</option>
+          <option value="solo-importantes">Solo noticias importantes</option>
+        </select>
+        </div>
+        <br />
+        <button type="submit">Suscribirme</button>
+      </form>
+      </section>
+
       <br />
       <section id="formas-contacto">
         <h2>Encontranos en:</h2>
         <ol>
-          <li>Dirección = "Av. Siempre Viva 123, Buenos Aires Argentina"</li>
-          <li>Teléfono = <a href="tel:+549999999999">+54 9 11 5321-1234</a></li>
+          <li> Dirección: Av. Siempre Viva 123, Buenos Aires, Argentina </li>
+          <li>Teléfono: <a href="tel:+549999999999">+54 9 11 5321-1234</a></li>
           <li>
-            Email =
+            Email:
             <a href="mailto:nombre@mail.org">impulso.joven@gmail.com </a>
           </li>
           <li>
-            RRSS =
+            En Instagram:
             <a
               href="https://www.instagram.com/impulso__joven/"
               target="_blank"
               rel="noopener noreferrer"
-              rel="Impulso Joven"
-            >
-              Instagram
+              > @impulsojoven_ong
             </a>
           </li>
         </ol>
       </section>
+
+      <section id="horarios">
+      <h2>Horarios de atención</h2>
+
+      <table>
+        <thead>
+        <tr>
+          <th>Día</th>
+          <th>Horario</th>
+        </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+           <td>Lunes a Viernes</td>
+           <td>09:00 a 18:00</td>
+          </tr>
+          <tr>
+            <td>Sábados</td>
+            <td>10:00 a 14:00</td>
+          </tr>
+          </tbody>
+      </table>
+      </section>
+      
     </main>
     <footer>
       <p>&copy; 2026 Impulso Joven. Todos los derechos reservados.</p>
