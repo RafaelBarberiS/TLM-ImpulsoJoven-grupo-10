@@ -153,6 +153,15 @@ article {
   margin-bottom: 2rem;
 }
 
+aside {
+  background-color: var(--color-blanco);
+  padding: 1rem;
+  border-left: 4px solid var(--color-terciario);
+  border-bottom: 4px solid var(--color-terciario);
+  margin-bottom: 2rem;
+  border-bottom-left-radius: 8px;
+}
+
 /*--------------------------------------------------------*/
 /* 📝 PÁRRAFOS Y LISTAS — Maite Espaciado para legibilidad */
 /*--------------------------------------------------------*/
