@@ -10,6 +10,12 @@
       href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./styles/estilos.css" />
   </head>
   <body>
@@ -27,33 +33,71 @@
           vulnerabilidad.
         </p>
       </section>
-      <nav aria-label="Menu principal">
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="nosotros.html">Nosotros</a></li>
-          <li><a href="programas.html">Programas</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
+      <nav
+        class="navbar navbar-expand-md sticky-top"
+        aria-label="Menu principal"
+      >
+        <div class="container-fluid justify-content-center px-3 px-md-4">
+          <!-- Botón hamburguesa (visible solo en móvil) -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarMenu"
+            aria-controls="navbarMenu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Links del menú -->
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarMenu"
+          >
+            <ul class="navbar-nav gap-1 gap-md-2 py-2 py-md-1">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a href="nosotros.html" class="nav-link">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a href="programas.html" class="nav-link">Programas</a>
+              </li>
+              <li class="nav-item">
+                <a href="contacto.html" class="nav-link">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
 
     <main>
       <section id="mision">
-        <h2>Nuestra Misión</h2>
-        <p>
-          Nuestra misión es promover el desarrollo educativo y laboral de
-          jóvenes mediante programas de formación, acompañamiento y acceso a
-          oportunidades reales.
-        </p>
-        <img
-          src="./img/impulsoJoven.jpg"
-          alt="Grupo de jóvenes colaborando en un espacio educativo"
-        />
-
-        <p>
-          Conoce más sobre <a href="#programas">nuestros programas</a> de
-          formación.
-        </p>
+        <div class="row align-items-center g-3">
+          <div class="col-12 col-md-7">
+            <h2>Nuestra Misión</h2>
+            <p>
+              Nuestra misión es promover el desarrollo educativo y laboral de
+              jóvenes mediante programas de formación, acompañamiento y acceso a
+              oportunidades reales.
+            </p>
+            <p>
+              Conoce más sobre <a href="#programas">nuestros programas</a> de
+              formación.
+            </p>
+          </div>
+          <div class="col-12 col-md-5 text-center">
+            <img
+              src="./img/impulsoJoven.jpg"
+              alt="Grupo de jóvenes colaborando en un espacio educativo"
+              class="img-fluid"
+            />
+          </div>
+        </div>
       </section>
 
       <article id="impacto-2024">
@@ -103,51 +147,69 @@
         <p>
           Trabajamos en tres pilares fundamentales para el crecimiento juvenil:
         </p>
-        <ul>
-          <li>
-            <h3>Capacitación Digital</h3>
-            <figure>
-              <img
-                src="./img/capacitacionDigital.jpg"
-                alt="Estudiante trabajando con una computadora portátil"
-              />
-              <figcaption>
-                Programa orientado al desarrollo de competencias digitales
-                esenciales para el acceso al empleo
-              </figcaption>
-            </figure>
-          </li>
+        <div class="row g-4 mt-1">
+          <!--Capacitación Digital -->
+          <div class="col-12 col-lg-4">
+            <div class="programa-card">
+              <h3>Capacitación Digital</h3>
+              <figure>
+                <img
+                  src="./img/capacitacionDigital.jpg"
+                  alt="Estudiante trabajando con una computadora portátil"
+                  class="img-fluid"
+                />
+                <figcaption>
+                  Programa orientado al desarrollo de competencias digitales
+                  esenciales para el acceso al empleo
+                </figcaption>
+              </figure>
+            </div>
+          </div>
 
-          <li>
-            <h3>Inserción Laboral</h3>
-            <figure>
-              <img
-                src="./img/insercionLaboral.jpg"
-                alt="Una mujer de recursos humanos esperando a estrechar la mano"
-              />
-              <figcaption>Acceso a oportunidades reales de empleo</figcaption>
-            </figure>
-          </li>
+          <!-- Inserción Laboral -->
+          <div class="col-12 col-lg-4">
+            <div class="programa-card">
+              <h3>Inserción Laboral</h3>
+              <figure>
+                <img
+                  src="./img/insercionLaboral.jpg"
+                  alt="Una mujer de recursos humanos esperando a estrechar la mano"
+                  class="img-fluid"
+                />
+                <figcaption>Acceso a oportunidades reales de empleo</figcaption>
+              </figure>
+            </div>
+          </div>
 
-          <li>
-            <h3>Mentorías</h3>
-            <figure>
-              <img
-                src="./img/mentoria2.jpg"
-                alt="Un mentor brindando consejos a un joven profesional"
-              />
-              <figcaption>
-                Orientación de nuestros jovenes por parte de nuestros
-                experimentados mentores
-              </figcaption>
-            </figure>
-          </li>
-        </ul>
+          <!-- Mentorías -->
+          <div class="col-12 col-lg-4">
+            <div class="programa-card">
+              <h3>Mentorías</h3>
+              <figure>
+                <img
+                  src="./img/mentoria2.jpg"
+                  alt="Un mentor brindando consejos a un joven profesional"
+                  class="img-fluid"
+                />
+                <figcaption>
+                  Orientación de nuestros jóvenes por parte de nuestros
+                  experimentados mentores
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
     <footer>
       <p>&copy; 2026 Impulso Joven. Todos los derechos reservados.</p>
     </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

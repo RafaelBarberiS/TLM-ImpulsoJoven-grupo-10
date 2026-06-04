@@ -10,6 +10,12 @@
       href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./styles/estilos.css" />
   </head>
   <body>
@@ -27,13 +33,45 @@
           vulnerabilidad.
         </p>
       </section>
-      <nav>
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="nosotros.html">Nosotros</a></li>
-          <li><a href="programas.html">Programas</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
+      <nav
+        class="navbar navbar-expand-md sticky-top"
+        aria-label="Menu principal"
+      >
+        <div class="container-fluid justify-content-center px-3 px-md-4">
+          <!-- Botón hamburguesa (visible solo en móvil) -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarMenu"
+            aria-controls="navbarMenu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Links del menú -->
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarMenu"
+          >
+            <ul class="navbar-nav gap-1 gap-md-2 py-2 py-md-1">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a href="nosotros.html" class="nav-link">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a href="programas.html" class="nav-link">Programas</a>
+              </li>
+              <li class="nav-item">
+                <a href="contacto.html" class="nav-link">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
     <main>
@@ -45,107 +83,119 @@
 
         <p>
           Nos encanta estar comunicados con vos, no dudes en
-          <a href="#formas-contacto"> visitarnos </a>, <a href="#suscripcion-noticias">suscribirte a nuestras noticias</a> o <a href="#formulario-contacto">enviarnos tu consulta</a>.
+          <a href="#formas-contacto"> visitarnos </a>,
+          <a href="#suscripcion-noticias">suscribirte a nuestras noticias</a> o
+          <a href="#formulario-contacto">enviarnos tu consulta</a>.
         </p>
       </div>
       <br />
 
       <section id="formulario-contacto">
-      <h2>Escribinos tu consulta</h2>
-       <form action="#" method="post">
-        <div>
-        <label for="nombre">Nombre y apellido:</label>
-        <input
-            type="text"
-            id="nombre"
-            name="nombre"
-            placeholder="Ingresá tu nombre completo" 
-            required />
-        </div>
+        <h2>Escribinos tu consulta</h2>
+        <form action="#" method="post">
+          <div>
+            <label for="nombre">Nombre y apellido:</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Ingresá tu nombre completo"
+              required
+            />
+          </div>
 
-        <div>
-        <label for="email">Correo electrónico:</label>
-        <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="ejemplo@mail.com"
-            required />
-        </div>
+          <div>
+            <label for="email">Correo electrónico:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="ejemplo@mail.com"
+              required
+            />
+          </div>
 
-        <div>
-        <label for="telefono">Teléfono:</label>
-        <input
-            type="tel"
-            id="telefono"
-            name="telefono"
-            placeholder="+54 9 11 1234-5678"  />
-        </div>
+          <div>
+            <label for="telefono">Teléfono:</label>
+            <input
+              type="tel"
+              id="telefono"
+              name="telefono"
+              placeholder="+54 9 11 1234-5678"
+            />
+          </div>
 
-        <div>
-        <label for="motivo">Motivo de contacto:</label>
-          <select id="motivo" name="motivo" required>
-            <option value="">Seleccioná una opción</option>
-            <option value="consulta-general">Consulta general</option>
-            <option value="voluntariado">Quiero ser voluntario/a</option>
-            <option value="donaciones">Quiero hacer una donación</option>
-            <option value="programas">Consulta sobre programas</option>
-          </select>
-        </div>
+          <div>
+            <label for="motivo">Motivo de contacto:</label>
+            <select id="motivo" name="motivo" required>
+              <option value="">Seleccioná una opción</option>
+              <option value="consulta-general">Consulta general</option>
+              <option value="voluntariado">Quiero ser voluntario/a</option>
+              <option value="donaciones">Quiero hacer una donación</option>
+              <option value="programas">Consulta sobre programas</option>
+            </select>
+          </div>
 
-        <div>
-        <label for="mensaje">Mensaje:</label>
-          <textarea
-          id="mensaje"
-          name="mensaje"
-          rows="6"
-          placeholder="Escribí tu consulta"
-          required> 
-          </textarea>
-        </div>
+          <div>
+            <label for="mensaje">Mensaje:</label>
+            <textarea
+              id="mensaje"
+              name="mensaje"
+              rows="6"
+              placeholder="Escribí tu consulta"
+              required
+            >
+            </textarea>
+          </div>
 
-        <br />
+          <br />
 
-    <button type="submit">Enviar consulta</button>
-    <button type="reset">Limpiar formulario</button>
-  </form>
+          <button type="submit">Enviar consulta</button>
+          <button type="reset">Limpiar formulario</button>
+        </form>
       </section>
 
       <section id="suscripcion-noticias">
         <h2>Suscribite a nuestras noticias</h2>
-        <p> Recibí novedades sobre programas, capacitaciones, campañas y oportunidades
-            para jóvenes.
+        <p>
+          Recibí novedades sobre programas, capacitaciones, campañas y
+          oportunidades para jóvenes.
         </p>
 
-      <form action="#" method="post">
-        <div>
-        <label for="email-suscripcion">Correo electrónico:</label>
-        <input
-          type="email"
-          id="email-suscripcion"
-          name="email-suscripcion"
-          placeholder="tuemail@mail.com"
-          required/>
-        </div>
-        <br />
-        <div>
-        <label for="frecuencia">¿Con qué frecuencia querés recibir novedades?</label>
-        <select id="frecuencia" name="frecuencia">
-          <option value="semanal">Semanal</option>
-          <option value="mensual">Mensual</option>
-          <option value="solo-importantes">Solo noticias importantes</option>
-        </select>
-        </div>
-        <br />
-        <button type="submit">Suscribirme</button>
-      </form>
+        <form action="#" method="post">
+          <div>
+            <label for="email-suscripcion">Correo electrónico:</label>
+            <input
+              type="email"
+              id="email-suscripcion"
+              name="email-suscripcion"
+              placeholder="tuemail@mail.com"
+              required
+            />
+          </div>
+          <br />
+          <div>
+            <label for="frecuencia"
+              >¿Con qué frecuencia querés recibir novedades?</label
+            >
+            <select id="frecuencia" name="frecuencia">
+              <option value="semanal">Semanal</option>
+              <option value="mensual">Mensual</option>
+              <option value="solo-importantes">
+                Solo noticias importantes
+              </option>
+            </select>
+          </div>
+          <br />
+          <button type="submit">Suscribirme</button>
+        </form>
       </section>
 
       <br />
       <section id="formas-contacto">
         <h2>Encontranos en:</h2>
         <ol>
-          <li> Dirección: Av. Siempre Viva 123, Buenos Aires, Argentina </li>
+          <li>Dirección: Av. Siempre Viva 123, Buenos Aires, Argentina</li>
           <li>Teléfono: <a href="tel:+549999999999">+54 9 11 5321-1234</a></li>
           <li>
             Email:
@@ -157,39 +207,45 @@
               href="https://www.instagram.com/impulso__joven/"
               target="_blank"
               rel="noopener noreferrer"
-              > @impulsojoven_ong
+            >
+              @impulsojoven_ong
             </a>
           </li>
         </ol>
       </section>
 
       <section id="horarios">
-      <h2>Horarios de atención</h2>
+        <h2>Horarios de atención</h2>
 
-      <table>
-        <thead>
-        <tr>
-          <th>Día</th>
-          <th>Horario</th>
-        </tr>
-        </thead>
+        <table>
+          <thead>
+            <tr>
+              <th>Día</th>
+              <th>Horario</th>
+            </tr>
+          </thead>
 
-        <tbody>
-          <tr>
-           <td>Lunes a Viernes</td>
-           <td>09:00 a 18:00</td>
-          </tr>
-          <tr>
-            <td>Sábados</td>
-            <td>10:00 a 14:00</td>
-          </tr>
+          <tbody>
+            <tr>
+              <td>Lunes a Viernes</td>
+              <td>09:00 a 18:00</td>
+            </tr>
+            <tr>
+              <td>Sábados</td>
+              <td>10:00 a 14:00</td>
+            </tr>
           </tbody>
-      </table>
+        </table>
       </section>
-      
     </main>
     <footer>
       <p>&copy; 2026 Impulso Joven. Todos los derechos reservados.</p>
     </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
