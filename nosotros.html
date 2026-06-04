@@ -76,7 +76,7 @@
           <li class="equipo"><strong>Ana López</strong>-Voluntariado</li>
         </ul>
       </section>
-      <br />
+
       <aside>
         <h2>Datos de la ONG</h2>
         <dl>
@@ -90,7 +90,6 @@
           <dd>Educación y empleo juvenil</dd>
         </dl>
       </aside>
-      <br />
 
       <section>
         <h2>Voluntariado</h2>
@@ -113,13 +112,13 @@
         </p>
 
         <form action="/enviar" method="post">
-          <h2>Tu tiempo y tus ganas pueden cambiar el futuro</h2>
-          <h3>
+          <p>Tu tiempo y tus ganas pueden cambiar el futuro</p>
+          <p>
             Si te interesa ser parte de nuestro voluntariado, completá el
             siguiente formulario contándonos un poco sobre vos, tus habilidades
             y tu disponibilidad y nos contactaremos para programar una
             entrevista:
-          </h3>
+          </p>
           <br />
           <label for="nombre">Nombre completo</label>
           <input
@@ -129,7 +128,7 @@
             placeholder="Ej: Ana Díaz"
             required
           />
-          <br /><br />
+
           <label for="email">Email</label>
           <input
             id="email"
@@ -138,7 +137,7 @@
             placeholder="Ej:tucuenta@correo.com"
             required
           />
-          <br /><br />
+
           <label for="estudios">Nivel de estudios</label>
           <select id="estudios" name="estudios" required>
             <option value="">Seleccione</option>
@@ -146,23 +145,23 @@
             <option value="ui">Universitario incompleto</option>
             <option value="uc">Universitario completo</option>
           </select>
-          <br /><br />
+
           <label for="disponibilidad">Disponibilidad</label>
           <select id="disponibilidad" name="disponibilidad">
             <option value="m">Mañana</option>
             <option value="t">Tarde</option>
             <option value="n">Noche</option>
           </select>
-          <br /><br />
+
           <label for="mensaje">Contanos sobre vos</label>
-          <br />
+
           <textarea
             id="mensaje"
             name="mensaje"
             rows="5"
             placeholder="Ej: contanos por qué te interesa ser voluntario y que tenés para ofrecer"
           ></textarea>
-          <br /><br />
+
           <button type="submit">Envíar</button>
         </form>
       </section>
