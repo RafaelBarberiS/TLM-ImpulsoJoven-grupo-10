@@ -35,7 +35,7 @@
       </section>
       <nav
         class="navbar navbar-expand-md sticky-top"
-        aria-label="Menu principal"
+        aria-label="Menú principal"
       >
         <div class="container-fluid justify-content-center px-3 px-md-4">
           <!-- Botón hamburguesa (visible solo en móvil) -->
@@ -74,11 +74,12 @@
         </div>
       </nav>
     </header>
-    <main>
+    <main class="container my-4">
       <div id="imagen">
         <img
           src="./img/Impulso-contacto.png"
           alt="Mujer amable que oficia de mesa de atención a nuevos usuarios"
+          class="img-fluid"
         />
 
         <p>
@@ -93,21 +94,23 @@
       <section id="formulario-contacto">
         <h2>Escribinos tu consulta</h2>
         <form action="#" method="post">
-          <div>
-            <label for="nombre">Nombre y apellido:</label>
-            <input
-              type="text"
-              id="nombre"
-              name="nombre"
-              placeholder="Ingresá tu nombre completo"
-              required
-            />
+          <div class="mb-3">
+             <label for="nombre" class="form-label">Nombre y apellido:</label>
+             <input
+                type="text"
+                class="form-control"
+                id="nombre"
+                name="nombre"
+                placeholder="Ingresá tu nombre completo"
+                required
+              />
           </div>
 
-          <div>
-            <label for="email">Correo electrónico:</label>
+          <div class="mb-3" >
+            <label for="email" class="form-label">Correo electrónico:</label>
             <input
               type="email"
+              class="form-control"          
               id="email"
               name="email"
               placeholder="ejemplo@mail.com"
@@ -116,9 +119,10 @@
           </div>
 
           <div>
-            <label for="telefono">Teléfono:</label>
+            <label for="telefono" class="form-label" >Teléfono:</label>
             <input
               type="tel"
+              class="form-control"  
               id="telefono"
               name="telefono"
               placeholder="+54 9 11 1234-5678"
@@ -127,7 +131,7 @@
 
           <div>
             <label for="motivo">Motivo de contacto:</label>
-            <select id="motivo" name="motivo" required>
+            <select id="motivo" name="motivo" class="form-select" required>
               <option value="">Seleccioná una opción</option>
               <option value="consulta-general">Consulta general</option>
               <option value="voluntariado">Quiero ser voluntario/a</option>
@@ -139,19 +143,19 @@
           <div>
             <label for="mensaje">Mensaje:</label>
             <textarea
-              id="mensaje"
-              name="mensaje"
-              rows="6"
-              placeholder="Escribí tu consulta"
-              required
-            >
-            </textarea>
+                id="mensaje"
+                name="mensaje"
+                class="form-control"
+                rows="6"
+                placeholder="Escribí tu consulta"
+                required
+            ></textarea>
           </div>
 
           <br />
 
-          <button type="submit">Enviar consulta</button>
-          <button type="reset">Limpiar formulario</button>
+          <button type="submit" class="btn btn-primary">Enviar consulta</button>
+          <button type="reset" class="btn btn-secondary">Limpiar formulario</button>
         </form>
       </section>
 
@@ -164,9 +168,10 @@
 
         <form action="#" method="post">
           <div>
-            <label for="email-suscripcion">Correo electrónico:</label>
+            <label for="email-suscripcion" class="form-label">Correo electrónico:</label>
             <input
               type="email"
+              class="form-control"
               id="email-suscripcion"
               name="email-suscripcion"
               placeholder="tuemail@mail.com"
@@ -175,10 +180,8 @@
           </div>
           <br />
           <div>
-            <label for="frecuencia"
-              >¿Con qué frecuencia querés recibir novedades?</label
-            >
-            <select id="frecuencia" name="frecuencia">
+            <label for="frecuencia" class="form-label">¿Con qué frecuencia querés recibir novedades?</label>
+            <select id="frecuencia" name="frecuencia" class="form-select">
               <option value="semanal">Semanal</option>
               <option value="mensual">Mensual</option>
               <option value="solo-importantes">
@@ -187,21 +190,19 @@
             </select>
           </div>
           <br />
-          <button type="submit">Suscribirme</button>
+          <button type="submit" class="btn btn-primary">Suscribirme</button>
         </form>
       </section>
 
       <br />
       <section id="formas-contacto">
         <h2>Encontranos en:</h2>
-        <ol>
-          <li>Dirección: Av. Siempre Viva 123, Buenos Aires, Argentina</li>
-          <li>Teléfono: <a href="tel:+549999999999">+54 9 11 5321-1234</a></li>
-          <li>
-            Email:
-            <a href="mailto:nombre@mail.org">impulso.joven@gmail.com </a>
+        <ol class="list-group list-group">
+          <li class="list-group-item">Dirección: Av. Siempre Viva 123, Buenos Aires, Argentina</li>
+          <li class="list-group-item">Teléfono: <a href="tel:+549999999999">+54 9 11 5321-1234</a></li>
+          <li class="list-group-item">Email: <a href="mailto:nombre@mail.org">impulso.joven@gmail.com </a>
           </li>
-          <li>
+          <li class="list-group-item">
             En Instagram:
             <a
               href="https://www.instagram.com/impulso__joven/"
@@ -217,7 +218,7 @@
       <section id="horarios">
         <h2>Horarios de atención</h2>
 
-        <table>
+        <table class="table table-striped">
           <thead>
             <tr>
               <th>Día</th>
