@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Impulso Joven - Inicio</title>
+    <title>Impulso Joven - Nosotros</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -51,7 +51,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <!-- Links del menú -->
+          <!-- Links del menú --> 
           <div
             class="collapse navbar-collapse justify-content-center"
             id="navbarMenu"
@@ -74,10 +74,14 @@
         </div>
       </nav>
     </header>
-    <main>
-      <section>
-        <h2 id="historia">Nuestra Historia</h2>
-        <p class="parrafos">
+
+    <!--Agrego un contenedor global con padding vertical para ordenar todo el contenido-->
+    <main class="container my-5">  
+
+      <!--Sección Historia-->
+      <section class=" mb-5">
+        <h2 id="historia" class="mb-3">Nuestra Historia</h2>
+        <p class="parrafos lead">
           María Gómez y Juan Perez, ambos criados en instituciones de menores,
           sintieron en carne propia lo que es la desigualdad de oportunidades.
         </p>
@@ -92,19 +96,23 @@
         </p>
       </section>
 
-      <section>
-        <h2 id="nuestros_valores">Valores:</h2>
-        <ul>
-          <li class="valores">Inclusión</li>
-          <li class="valores">Educación accesible</li>
-          <li class="valores">Compromiso social</li>
-          <li class="valores">Transparencia</li>
-          <li class="valores">Trabajo en equipo</li>
+      <!--Sección Valores ( con etiquetas visuales compactas)-->
+
+      <section class="mb-5">
+        <h2 id="nuestros_valores" class="mb-3">Valores:</h2>
+        <ul class="list-unstyled d-flex flex-wrap gap-2">
+          <li class="valores badge bg-secondary-subtle text-secondary-emphasis px-3 py-2 fs-6 border border-secondary-subtle rounded-pill">Inclusión</li>
+          <li class="valores badge bg-secondary-subtle text-secondary-emphasis px-3 py-2 fs-6 border border-secondary-subtle rounded-pill">Educación accesible</li>
+          <li class="valores badge bg-secondary-subtle text-secondary-emphasis px-3 py-2 fs-6 border border-secondary-subtle rounded-pill">Compromiso social</li>
+          <li class="valores badge bg-secondary-subtle text-secondary-emphasis px-3 py-2 fs-6 border border-secondary-subtle rounded-pill">Transparencia</li>
+          <li class="valores badge bg-secondary-subtle text-secondary-emphasis px-3 py-2 fs-6 border border-secondary-subtle rounded-pill">Trabajo en equipo</li>
         </ul>
       </section>
 
-      <section>
-        <h2 id="nuestro_equipo">Equipo:</h2>
+      
+      <section class="mb-5">
+        <h2 id="nuestro_equipo" class="mb-3">Equipo:</h2>
+
         <ul>
           <li class="equipo"><strong>Juan Pérez</strong>-Director Ejecutivo</li>
           <li class="equipo">
@@ -115,21 +123,23 @@
         </ul>
       </section>
 
-      <aside>
-        <h2>Datos de la ONG</h2>
-        <dl>
-          <dt>Año de fundación</dt>
-          <dd><b>2020</b></dd>
-          <dt>Ubicación</dt>
-          <dd>Buenos Aires, Argentina</dd>
-          <dt>Tipo de Organización</dt>
-          <dd>ONG sin fines de lucro</dd>
-          <dt>Ámbito</dt>
-          <dd>Educación y empleo juvenil</dd>
+      <!--Datos de la ONG (estilizado como una sección informativa destacada)-->
+      <aside class="card p-4 border-0 bg-light-subtle shadow-sm mb-5">
+        <h2 class="h4 mb-3">Datos de la ONG</h2>
+        <dl class="row mb-0 g-2">
+          <dt class="col-sm-4 text-muted fw-normal">Año de fundación</dt>
+          <dd class="col-sm-8"><strong>2020</strong></dd>
+          <dt class="col-sm-4 text-muted fw-normal">Ubicación</dt>
+          <dd class="col-sm-8">Buenos Aires, Argentina</dd>
+          <dt class="col-sm-4 text-muted fw-normal">Tipo de Organización</dt>
+          <dd class="col-sm-8">ONG sin fines de lucro</dd>
+          <dt class="col-sm-4 text-muted fw-normal">Ámbito</dt>
+          <dd class="col-sm-8">Educación y empleo juvenil</dd>
         </dl>
       </aside>
 
-      <section>
+      <!--Sección Voluntariado y Formulario-->
+      <section class="mb-5">
         <h2>Voluntariado</h2>
         <p class="parrafos">
           Más del 60 por ciento de nuestro equipo está formado por voluntarios
@@ -149,59 +159,76 @@
           de su ayuda en primera persona.
         </p>
 
-        <form action="/enviar" method="post">
-          <p>Tu tiempo y tus ganas pueden cambiar el futuro</p>
-          <p>
-            Si te interesa ser parte de nuestro voluntariado, completá el
-            siguiente formulario contándonos un poco sobre vos, tus habilidades
-            y tu disponibilidad y nos contactaremos para programar una
-            entrevista:
-          </p>
-          <br />
-          <label for="nombre">Nombre completo</label>
-          <input
-            type="text"
-            id="nombre"
-            name="nombre"
-            placeholder="Ej: Ana Díaz"
-            required
-          />
+        <!--Formulario con clases funcionales de Bootstrap-->
+        <div class="card p-4 shadow-sm border mt-4 col-12 col-lg-8 mx-auto">
+          <form action="/enviar" method="post">
+            <h3 class="h5 fw-bold mb-2">Tu tiempo y tus ganas pueden cambiar el futuro</p>
+            <p class="text-muted small mb-4">
+              Si te interesa ser parte de nuestro voluntariado, completá el
+              siguiente formulario contándonos un poco sobre vos, tus habilidades
+              y tu disponibilidad y nos contactaremos para programar una
+              entrevista:
+            </p>
 
-          <label for="email">Email</label>
-          <input
-            id="email"
-            type="email"
-            name="email"
-            placeholder="Ej:tucuenta@correo.com"
-            required
-          />
+            <div class="mb-3">
+              <label for="nombre" class="form-label fw-semibold">Nombre completo</label>
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                class="form-control"
+                placeholder="Ej: Ana Díaz"
+                required
+              />
+            </div>
+            
+            <div class="mb-3">
+              <label for="email" class="form-label fw-semibold">Email</label>
+              <input
+                id="email"
+                type="email"
+                name="email"
+                class="form-control"
+                placeholder="Ej:tucuenta@correo.com"
+                required
+              />
+            </div>
 
-          <label for="estudios">Nivel de estudios</label>
-          <select id="estudios" name="estudios" required>
-            <option value="">Seleccione</option>
-            <option value="sc">Secundario completo</option>
-            <option value="ui">Universitario incompleto</option>
-            <option value="uc">Universitario completo</option>
-          </select>
+            <div class="row g-3 mb-3">
+              <div class="col-12 col-sm-6">
+                <label for="estudios" class="form-label fw-semibold">Nivel de estudios</label>
+                <select id="estudios" name="estudios" class="form-select" required>
+                  <option value="">Seleccione</option>
+                  <option value="sc">Secundario completo</option>
+                  <option value="ui">Universitario incompleto</option>
+                  <option value="uc">Universitario completo</option>
+                </select>
+              </div>
+              
+              <div class="col-12 col-sm-6">
+                <label for="disponibilidad" class="form-label fw-semibold">Disponibilidad</label>
+                <select id="disponibilidad" name="disponibilidad" class="form-select">
+                  <option value="m">Mañana</option>
+                  <option value="t">Tarde</option>
+                  <option value="n">Noche</option>
+                </select>
+              </div>
+            </div>
+            
+            <div class="mb-4">
+              <label for="mensaje" class="form-label fw-semibold">Contanos sobre vos</label>
+              <textarea
+                id="mensaje"
+                name="mensaje"
+                class="form-control"
+                rows="4"
+                placeholder="Ej: contanos por qué te interesa ser voluntario y que tenés para ofrecer"
+             ></textarea>
+            </div> 
 
-          <label for="disponibilidad">Disponibilidad</label>
-          <select id="disponibilidad" name="disponibilidad">
-            <option value="m">Mañana</option>
-            <option value="t">Tarde</option>
-            <option value="n">Noche</option>
-          </select>
-
-          <label for="mensaje">Contanos sobre vos</label>
-
-          <textarea
-            id="mensaje"
-            name="mensaje"
-            rows="5"
-            placeholder="Ej: contanos por qué te interesa ser voluntario y que tenés para ofrecer"
-          ></textarea>
-
-          <button type="submit">Envíar</button>
-        </form>
+            <button type="submit" class="btn btn-primary px-4 py-2 w-100 w-sm-auto">Envíar</button>
+          </form>
+        </div>  
       </section>
     </main>
 
