@@ -16,18 +16,28 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
     <link rel="stylesheet" href="./styles/estilos.css" />
   </head>
   <body>
     <header>
       <section id="presentacion">
-        <h1>Impulso Joven</h1>
-        <img
-          src="./img/logoImpulsoJoven.png"
-          alt="Logotipo de la ONG Impulso Joven"
-          width="150"
-        />
-        <p>
+        <div
+          class="d-flex flex-wrap justify-content-center align-items-center gap-3"
+        >
+          <img
+            src="./img/logoImpulsoJoven.png"
+            alt="Logotipo de la ONG Impulso Joven"
+            width="150"
+          />
+
+          <h1 class="mb-0">Impulso Joven</h1>
+        </div>
+
+        <p class="mt-3">
           Impulso Joven es una organización sin fines de lucro dedicada a
           brindar oportunidades educativas y laborales a jóvenes en situación de
           vulnerabilidad.
@@ -95,22 +105,22 @@
         <h2>Escribinos tu consulta</h2>
         <form action="#" method="post">
           <div class="mb-3">
-             <label for="nombre" class="form-label">Nombre y apellido:</label>
-             <input
-                type="text"
-                class="form-control"
-                id="nombre"
-                name="nombre"
-                placeholder="Ingresá tu nombre completo"
-                required
-              />
+            <label for="nombre" class="form-label">Nombre y apellido:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="nombre"
+              name="nombre"
+              placeholder="Ingresá tu nombre completo"
+              required
+            />
           </div>
 
-          <div class="mb-3" >
+          <div class="mb-3">
             <label for="email" class="form-label">Correo electrónico:</label>
             <input
               type="email"
-              class="form-control"          
+              class="form-control"
               id="email"
               name="email"
               placeholder="ejemplo@mail.com"
@@ -119,10 +129,10 @@
           </div>
 
           <div>
-            <label for="telefono" class="form-label" >Teléfono:</label>
+            <label for="telefono" class="form-label">Teléfono:</label>
             <input
               type="tel"
-              class="form-control"  
+              class="form-control"
               id="telefono"
               name="telefono"
               placeholder="+54 9 11 1234-5678"
@@ -143,19 +153,21 @@
           <div>
             <label for="mensaje">Mensaje:</label>
             <textarea
-                id="mensaje"
-                name="mensaje"
-                class="form-control"
-                rows="6"
-                placeholder="Escribí tu consulta"
-                required
+              id="mensaje"
+              name="mensaje"
+              class="form-control"
+              rows="6"
+              placeholder="Escribí tu consulta"
+              required
             ></textarea>
           </div>
 
           <br />
 
           <button type="submit" class="btn btn-primary">Enviar consulta</button>
-          <button type="reset" class="btn btn-secondary">Limpiar formulario</button>
+          <button type="reset" class="btn btn-secondary">
+            Limpiar formulario
+          </button>
         </form>
       </section>
 
@@ -168,7 +180,9 @@
 
         <form action="#" method="post">
           <div>
-            <label for="email-suscripcion" class="form-label">Correo electrónico:</label>
+            <label for="email-suscripcion" class="form-label"
+              >Correo electrónico:</label
+            >
             <input
               type="email"
               class="form-control"
@@ -180,7 +194,9 @@
           </div>
           <br />
           <div>
-            <label for="frecuencia" class="form-label">¿Con qué frecuencia querés recibir novedades?</label>
+            <label for="frecuencia" class="form-label"
+              >¿Con qué frecuencia querés recibir novedades?</label
+            >
             <select id="frecuencia" name="frecuencia" class="form-select">
               <option value="semanal">Semanal</option>
               <option value="mensual">Mensual</option>
@@ -198,9 +214,14 @@
       <section id="formas-contacto">
         <h2>Encontranos en:</h2>
         <ol class="list-group list-group">
-          <li class="list-group-item">Dirección: Av. Siempre Viva 123, Buenos Aires, Argentina</li>
-          <li class="list-group-item">Teléfono: <a href="tel:+549999999999">+54 9 11 5321-1234</a></li>
-          <li class="list-group-item">Email: <a href="mailto:nombre@mail.org">impulso.joven@gmail.com </a>
+          <li class="list-group-item">
+            Dirección: Av. Siempre Viva 123, Buenos Aires, Argentina
+          </li>
+          <li class="list-group-item">
+            Teléfono: <a href="tel:+549999999999">+54 9 11 5321-1234</a>
+          </li>
+          <li class="list-group-item">
+            Email: <a href="mailto:nombre@mail.org">impulso.joven@gmail.com </a>
           </li>
           <li class="list-group-item">
             En Instagram:
@@ -240,7 +261,23 @@
       </section>
     </main>
     <footer>
-      <p>&copy; 2026 Impulso Joven. Todos los derechos reservados.</p>
+      <div class="d-flex justify-content-between align-items-center flex-wrap">
+        <p class="mb-0">
+          &copy; 2026 Impulso Joven. Todos los derechos reservados.
+        </p>
+
+        <address class="mb-0 d-flex align-items-center gap-2">
+          <span>Repositorio en GitHub:</span>
+          <a
+            href="https://github.com/RafaelBarberiS/TLM-ImpulsoJoven-grupo-10"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Abrir repositorio del proyecto en GitHub"
+          >
+            <i class="bi bi-github fs-3"></i>
+          </a>
+        </address>
+      </div>
     </footer>
 
     <script
